@@ -1,0 +1,36 @@
+{
+  "name": "angular2-webpack",
+  "version": "1.0.0",
+  "description": "A demo of angular2 and webpack",
+  "main": "app.ts",
+  "scripts": {
+    "postinstall": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunyan/angular2-webpack.git"
+  },
+  "keywords": [
+    "angular2",
+    "webpack",
+    "typescript"
+  ],
+  "author": "Kun Yan <kyan@redhat.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kunyan/angular2-webpack/issues"
+  },
+  "homepage": "https://github.com/kunyan/angular2-webpack#readme",
+  "devDependencies": {
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "webpack": "^1.12.15"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-beta.14",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "zone.js": "^0.6.10"
+  }
+}
