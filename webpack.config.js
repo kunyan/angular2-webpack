@@ -29,13 +29,13 @@ module.exports = {
       {
         test: /\.ts$/,
         loader: 'tslint',
-        exclude: /node_modules/
+        exclude: [/\.(spec|e2e)\.ts$/, /node_modules\/(?!(ng2-.+))/]
       }
     ],
     loaders: [{
       test: /\.ts$/,
       loader: 'ts-loader',
-      exclude: /node_modules/
+      exclude: [/\.(spec|e2e)\.ts$/, /node_modules\/(?!(ng2-.+))/]
     }]
   }
 
