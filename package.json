@@ -4,7 +4,8 @@
   "description": "A demo of angular2 and webpack",
   "main": "app.ts",
   "scripts": {
-    "postinstall": "webpack"
+    "build": "webpack",
+    "watch": "webpack --progress --colors --watch"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,11 @@
   "homepage": "https://github.com/kunyan/angular2-webpack#readme",
   "devDependencies": {
     "ts-loader": "^0.8.2",
+    "tslint": "^3.7.4",
+    "tslint-loader": "^2.1.3",
     "typescript": "^1.8.10",
-    "webpack": "^1.12.15"
+    "webpack": "^1.12.15",
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "angular2": "^2.0.0-beta.14",

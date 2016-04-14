@@ -3,7 +3,7 @@ import {Todo}      from './todo';
 import {TodoList}  from './todo_list';
 import {TodoForm}  from './todo_form';
 @Component({
-  selector: 'todo-app',
+selector: 'todo-app',
   template: `
     <h2>Todo</h2>
     <span>{{remaining}} of {{todos.length}} remaining</span>
