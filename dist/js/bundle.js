@@ -96,7 +96,7 @@ webpackJsonp([0],{
 	            selector: 'todo-list',
 	            styles: ["\n    .done-true {\n      text-decoration: line-through;\n      color: grey;\n    }"
 	            ],
-	            template: "\n    <ul class=\"list-unstyled\">\n      <li *ngFor=\"#todo of todos\">\n        <input type=\"checkbox\" [(ngModel)]=\"todo.done\">\n        <span class=\"done-{{todo.done}}\">{{todo.text}}</span>\n      </li>\n    </ul>"
+	            template: "\n    <ul class=\"list-unstyled\">\n      <li *ngFor=\"#todo of todos\">\n        <label><input type=\"checkbox\" [(ngModel)]=\"todo.done\">\n        <span class=\"done-{{todo.done}}\">{{todo.text}}</span></label>\n      </li>\n    </ul>"
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], TodoList);
@@ -139,7 +139,7 @@ webpackJsonp([0],{
 	    TodoForm = __decorate([
 	        core_1.Component({
 	            selector: 'todo-form',
-	            template: "\n    <form (ngSubmit)=\"addTodo()\">\n      <input type=\"text\" [(ngModel)]=\"task\" size=\"30\"\n             placeholder=\"add new todo here\">\n      <input class=\"btn-primary\" type=\"submit\" value=\"add\">\n    </form>"
+	            template: "\n    <form (ngSubmit)=\"addTodo()\">\n      <input type=\"text\" [(ngModel)]=\"task\" size=\"30\"\n             placeholder=\"add new todo here\" required>\n      <input class=\"btn-primary\" type=\"submit\" value=\"add\">\n    </form>\n    "
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], TodoForm);
