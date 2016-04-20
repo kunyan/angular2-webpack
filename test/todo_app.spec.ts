@@ -13,9 +13,20 @@ describe('TodoApp', () => {
         todoApp = new TodoApp();
     });
 
+    it('remaining', () => {
+        expect(todoApp.remaining).to.be.equals(1);
+    });
+
+    it('archive', () => {
+        todoApp.todos[0].done = true;
+        todoApp.archive();
+        expect(todoApp.todos.length).to.be.equals(1);
+    });
+
     it('addTask', () => {
-        // let todo: Todo = {text: 'Washing dishes', done: false};
         todoApp.addTask({ text: 'Washing dishes', done: false });
         expect(todoApp.todos.length).to.be.equals(3);
     });
+
+
 });
