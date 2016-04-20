@@ -2,8 +2,6 @@
 import 'reflect-metadata';
 import { expect } from 'chai';
 import { assert } from 'chai';
-
-// import { Todo } from '../app/todo';
 import { TodoApp } from '../app/todo_app';
 
 describe('TodoApp', () => {
@@ -18,7 +16,6 @@ describe('TodoApp', () => {
     });
 
     it('archive', () => {
-        todoApp.todos[0].done = true;
         todoApp.archive();
         expect(todoApp.todos.length).to.be.equals(1);
     });

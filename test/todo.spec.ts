@@ -1,7 +1,6 @@
 /// <reference path="../typings/main.d.ts" />
 import { expect } from 'chai';
 import { assert } from 'chai';
-
 import { Todo } from '../app/todo';
 
 describe('Todo', () => {
